@@ -1,0 +1,267 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Deedy - One Page Two Column Resume
+% LaTeX Template
+% Version 1.1 (30/4/2014)
+%
+% Original author:
+% Debarghya Das (http://debarghyadas.com)
+%
+% Original repository:
+% https://github.com/deedydas/Deedy-Resume
+%
+% IMPORTANT: THIS TEMPLATE NEEDS TO BE COMPILED WITH XeLaTeX
+%
+% This template uses several fonts not included with Windows/Linux by
+% default. If you get compilation errors saying a font is missing, find the line
+% on which the font is used and either change it to a font included with your
+% operating system or comment the line out to use the default font.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% Known Issues:
+% 1. Overflows onto second page if any column's contents are more than the
+% vertical limit
+% 2. Hacky space on the first bullet point on the second column.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\documentclass[]{deedy-resume-openfont}
+\usepackage{fancyhdr}
+\usepackage[dvipsnames]{xcolor}
+
+\pagestyle{fancy}
+\fancyhf{}
+
+\begin{document}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     LAST UPDATED DATE
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\lastupdated
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     TITLE NAME
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\namesection{Gloria}{Anholt}
+{
+	\location{}
+	%\vspace{\topsep}
+	\begin{center}
+	Full stack developer with a demonstrated ability to dive deep into the inner workings of a problem. \\
+	I specialize in breaking complex topics down into meaningful, understandable bits. \\
+	I love puzzling out how things work by jumping right into the docs and the code.
+	\end{center}
+}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     COLUMN ONE
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{minipage}[t]{0.71\textwidth}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     PROJECTS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\vspace{3mm}
+\section{Tech Experience}
+
+\runsubsection{Bootcamp Teaching Asst (Full-Stack JS)}
+\vspace{0.6mm}
+\location{ \href{http://www.codefellowspdx.com/}{\textcolor{blue}{Link}} | \href{https://github.com/cfpdx-401d5}{\textcolor{blue}{Code Reviews}}}
+Provide mentoring and code reviews for Advanced students at Code Fellows PDX.
+\vspace{4.5mm} % Hacky fix - this needs more vertical space than the other two projects for no apparent reason
+\begin{tightemize}
+\item Topics include Node.js (http/TCP, CLI, file systems), Express.js, MongoDB and 
+Mongoose, testing with Mocha and Jest, and React.js with Router and Redux. \\
+\end{tightemize}
+\sectionsep
+\vspace{2mm}
+
+\runsubsection{Transplantr (React)}
+\vspace{0.6mm}
+\location{ \href{https://transplantr.herokuapp.com/}{\textcolor{blue}{Link}} | \href{https://github.com/GloriaAnholt/React-Transplantr}{\textcolor{blue}{Source Code}}}
+An app that lets you compare your current income and economic strength to how much you
+would need to make to maintain your current purchasing or renting power in a new city.
+\vspace{1.5mm}
+\begin{tightemize}
+\item Uses US Census, Zillow, and median rental price data, via AJAX calls to APIs.
+\item Rewritten using React component architecture with Router and an Express backend.
+\item Originally written as a 4-person team using JQuery and Handlebars for templating. \\
+End-to-end tested with Mocha. Deployed on Heroku.\\
+\end{tightemize}
+\sectionsep
+\vspace{2mm}
+
+\runsubsection{TechFolio (Angular)}
+\vspace{0.6mm}
+\location{ \href{https://techfolio.herokuapp.com/}{\textcolor{blue}{Link}} | \href{https://github.com/devfolio/techfolio}{\textcolor{blue}{Source Code}}}
+In a one-week sprint, a team of four wrote, tested, and deployed an app which uses OAuth
+to link accounts with your GitHub and LinkedIn to dynamically generate a tech portfolio
+page.
+\vspace{1.5mm} % Hacky fix - this needs more vertical space than the other two projects for no apparent reason
+\begin{tightemize}
+\item Backend built using the JavaScript MEAN-stack. Data API uses JSON web tokens \\
+for
+auth, and OAuth API calls to GitHub and LinkedIn.
+\item Angular 1 frontend using UI-Router, component-based architecture, and services. \\
+\end{tightemize}
+\sectionsep
+\vspace{2mm}
+
+
+\runsubsection{Mozilla Marionette (JS)}
+\vspace{0.6mm}
+\location{ \href{https://hg.mozilla.org/mozilla-central/log?rev=Bug+1256996}{\textcolor{blue}{ Bugzilla: Bug 1256996}}}
+Cloned Mozilla Central repository via Mercurial, landed patch in Mozilla Marionette.
+\vspace{1.5mm}
+\begin{tightemize}
+\item Resolved issue in Bugzilla under the mentorship of Maja Frydrychowicz (:maja\_zf).
+\end{tightemize}
+\sectionsep
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     WORK EXPERIENCE
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% PUT TITLES FIRST, company secnd
+% remove months from the dates
+% add Hope Services work
+% aim for a quick skim job by recruiters
+% remove adjectives from ILG
+
+\section{Recent Work Experience}
+\runsubsection{Instructional Designer} \\
+%\descript{}
+\vspace{.6mm}
+\location{2014 – 2016 | Idea Learning Group Portland, OR}
+\vspace{.6mm}
+Crafted instructional materials with engaging interactions and elegant clean designs. \\
+Completed engineering, safety training, financial, and HR related trainings.
+\vspace{.8mm}
+\begin{tightemize}
+\item Implemented an entire multisystem training course for a billion dollar off-shore
+German wind farm. Used engineering technical documents and schematics to \\
+create classroom-based training materials (presentation and student handbooks).
+\end{tightemize}
+\sectionsep
+\vspace{\topsep} % Hacky fix for awkward extra vertical space
+
+\runsubsection{EAPSI Summer Fellow} \\
+%\descript{}
+\vspace{.6mm}
+\location{2013 | NSF \& JSPS Tokyo, Japan}
+\vspace{.6mm}
+Represented United States as "Science Liason" for the National Science Foundation (NSF). \\
+\vspace{.5mm}
+\begin{tightemize}
+\item Worked collaboratively with Japanese researchers through their national \\
+science organization, Japanese Society for the Promotion of Science (JSPS).
+\end{tightemize}
+\sectionsep
+\vspace{\topsep} % Hacky fix for awkward extra vertical space
+
+\runsubsection{Teaching Associate, History Dept.} \\
+%\descript{}
+\vspace{.6mm}
+\location{2008 – 2013 | UCLA Los Angeles, CA}
+\vspace{.6mm}
+Taught intro History of Science, Southeast and East Asian History courses. \\
+\vspace{.5mm}
+\begin{tightemize}
+\item Using 'Socratic' interactive sections, demonstrated critical reading of historical
+sources, and taught analytical writing techniques to advanced undergraduates.
+\end{tightemize}
+\sectionsep
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     COLUMN TWO
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\end{minipage}
+\hfill
+\begin{minipage}[t]{0.26\textwidth}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     LINKS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\vspace{3mm}
+\section{Connect}
+Web/ \urlstyle{same}\href{http://www.GloriaAnholt.com}{\textbf{\textcolor{blue}{GloriaAnholt.com}}} \\
+Email/ \href{mailto:gloriaanholt@gmail.com}{\textbf{\textcolor{blue}{GloriaAnholt@gmail.com}}} \\
+Github/ \href{https://github.com/GloriaAnholt}{\textbf{\textcolor{blue}{GloriaAnholt}}} \\
+LinkedIn/ \href{https://www.linkedin.com/in/gloriaanholt}{\textbf{\textcolor{blue}{GloriaAnholt}}} \\
+Twitter/ \href{https://twitter.com/totallygloria}{\textbf{\textcolor{blue}{@totallygloria}}}
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     SKILLS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Skills}
+\runsubsection{Programming}
+\location{}
+Python  \\
+JavaScript / ES6 \\
+Node / Express \\
+React / Router / Redux \\
+Angular \\
+MongoDB / Mongoose \\
+Mocha / Chai / Karma \\
+Travis CI \\
+HTML / CSS / jQuery \\
+Shell  |  LaTeX \\
+\vspace{\topsep} % Hacky fix for awkward extra vertical space
+\runsubsection{Version Control} \\
+\location{}
+Git | Github | Mercurial \\
+\vspace{\topsep} % Hacky fix for awkward extra vertical space
+\runsubsection{Systems} \\
+\location{}
+Linux Distros: 15 years \\
+MacOSX \\
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     EDUCATION
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Education}
+\runsubsection{Univ of California \\
+Los Angeles (UCLA)} \\
+\descript{MA History of Science}
+\location{Awards and Scholarships}  %throws errors when empty
+Chancellor's Prize Fellow \\
+History Dept. Fellow \\
+EAPSI/JSPS Summer Fellow \\
+FLAS Summer \& Annual Fellow \\
+\sectionsep
+\runsubsection{Univ of California \\
+Santa Cruz (UCSC)} \\
+\descript{BA in Anthropology}
+\location{}
+Highest Honors in the Major \\
+Highest Honors Senior Thesis \\
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     TECH EDUCATION
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Tech-Education}
+\runsubsection{Code Fellows PDX} \\
+\descript{Certificate}
+\location{}
+{\href{https://www.codefellows.org/courses/code-401/advanced-software-development-in-full-stack-javascript/}
+{ Advanced Software Dev \\
+Full-Stack JavaScript}} \\
+
+\end{minipage} 
+\end{document}
+\documentclass
